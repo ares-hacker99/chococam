@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+    --primary-color: rgba(62, 50, 50, 1);
+    --secondary-color: rgba(0, 0, 0, 1);
+    --title-color: rgba(2, 2, 2, 1);
+    --text-color: rgba(0, 14, 1, 0.84);
+    --icon-color: rgba(255, 217, 61, 1);
+    --font-size: 14px;
+    --font-family: "IBM Plex Sans Hebrew", sans-serif;
+    --neutral: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    overflow-x: hidden;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    display: flex;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 5rem;
+}
+
+li {
+    display: inline;
+    margin-right: 0.7rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--title-color);
+}
+
+/*style hearder*/
+header {
+    width: 100%;
+    height: 15vh;
+    background-color: var(--neutral);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header>nav {
+    display: flex;
+    align-items: center;
+    height: 8rem;
+    font-size: 1.8rem;
+    width: 100%;
+}
+
+header>nav>ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+header>nav>ul>li>a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+    text-decoration-thickness: .2rem;
+    text-underline-offset: 1rem;
+    transition: all .3s ease-in-out;
+}
+
+nav ul {
+    margin-bottom: 0.5rem;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+.nav-button>a {
+    padding: 1rem 3rem;
+    margin-right: 1rem;
+    color: var(--neutral);
+    background-color: var(--primary-color);
+    font-weight: bold;
+    float: right;
+}
+
+.nav-button>a:hover {
+    background-color: var(--secondary-color);
+    transition: all .3s ease-in-out;
+}
+
+.button {
+    display: none;
+    visibility: hidden;
+}
+
+.section1,
+.section2,
+.section4{
+    width: 85rem;
+    height: 40rem;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
+.section3 {
+    display: flex;
+    flex-direction: row;
+    width: 85rem;
+    height: 20rem;
+    background-color: var(--primary-color);
+    margin-top: 2rem;
+    margin: auto;
+}
+
+.sectin4 {}
+
+.section5{
+    display: flex;
+    flex-direction: row;
+    width: 85rem;
+    height: 35rem;
+    margin-top: 2rem;
+    margin: auto;
+}
+.sectionA,
+.sectionB,
+.sectionC,
+.sectionD,
+.sectionF
+{
+    flex: 1;
+}
+
+.sectionC>img {
+    margin-left: 5rem;
+}
+
+.sectionE {
+    text-align: center;
+    margin: 5rem;
+}
+.sectionF{
+    text-align: center;
+    margin-top: 30rem;
+    height: 30rem;
+    width: 85rem;
+    background-color: rgba(3, 3, 3, 0.19);
+}
+input{
+    height: 5rem;
+    margin: 1rem;
+    border: 0.1rem solid  rgba(68, 52, 52, 1);
+}
+
+footer{
+    background-color: rgba(68, 52, 52, 1);
+    height: 10rem;
+    text-align: center;
+    display: block;
+    padding: 5rem;
+}
+
+/*ecran de 600pixels*/
+@media only screen and (max-width: 600px) {
+
+    header>nav>ul,
+    .nav-button {
+        display: none;
+        visibility: hidden;
+    }
+
+    header>nav {
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .button {
+        display: inline-block;
+        visibility: visible;
+        color: var(--primary-color);
+        padding-right: 1rem;
+    }
+    .section1,
+.section2,
+.section4{
+    width: 30rem;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25rem;
+    padding: auto;
+}
+.section1,
+.section4{
+    padding-bottom: 2rem;
+    margin-top: 1rem;
+}
+.section5>div{
+
+}
+.sectionF>div{
+   
+}
+.sectionA,
+.sectionB,
+.sectionC,
+.sectionD,
+.sectionF
+{
+    flex: 1;
+    padding: auto;
+}
+.texte{
+    display: none;
+    visibility: hidden;
+}
+.sectionA{
+    margin-bottom: 5rem;
+}
+.container{
+    padding: auto;
+    text-align: center;
+}
+.bord1, .bord2, .bord3, .bord4{
+padding: auto;
+margin-right: 20rem;
+}
+}
+/*fin ecran de 600pixels*/
+
+.container {
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.titre {
+    color: var(--title-color);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.titre1 {
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 2rem;
+}
+
+.texte {
+    color: var(--secondary-color);
+    font-size: 1rem;
+    font-family: var(--font-family);
+    padding: 5rem;
+}
+
+.texte1 {
+    font-size: 1.7rem;
+    color: rgba(255, 255, 255, 1);
+
+}
+
+.cmd>a {
+    color: rgba(223, 206, 206, 1);
+    font-size: 2rem;
+    padding: 1rem 3rem;
+    margin-right: 1rem;
+    color: var(--neutral);
+    background-color: var(--primary-color);
+    font-weight: bold;
+}
+
+.cmd>a:hover {
+    background-color: var(--secondary-color);
+    transition: all .3s ease-in-out;
+}
+
+.bord1 {
+    height: 25rem;
+    width: 30rem;
+    background: url(/assets/img/bord-chigum.png) center no-repeat;
+}
+
+.bord2 {
+    background: url(/assets/img/bord-mambo.png) center no-repeat;
+    background-size: 30rem;
+    width: 30rem;
+    height: 25rem;
+}
+
+.bord3 {
+    background: url(/assets/img/bord-choco.png) center no-repeat;
+    background-size: 27rem;
+    height: 25rem;
+    width: 30rem;
+}
+
+.bord4 {
+    background: url(/assets/img/bord-bonbon.png) center no-repeat;
+    background-size: 27rem;
+    height: 25rem;
+    width: 30rem;
+}
+.inp{
+    width: 23.5rem;
+}
+.message{
+    align-items: center;
+    margin-left: 35rem;
+    margin-right: 35rem;
+}
+.send{
+    border: 0.1rem solid black;
+    background-color: rgba(68, 52, 52, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.but-send{}
+
+.icon{
+    margin-right: 1rem;
+}
+.ligh{
+    width:100% ;
+    height: 5rem;
+    margin-top: 45rem;
+    background-color: #ffffff;
+}
+
+
